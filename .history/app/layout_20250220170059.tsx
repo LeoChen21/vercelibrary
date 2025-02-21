@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./../components/Header";
 
 export const metadata: Metadata = {
-  title: "OWL",
-  description: "Organized Web Library",
+  title: "Vercel + Neon",
+  description: "Use Neon with Vercel",
 };
 
 export default function RootLayout({
@@ -14,13 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div>
-          <Header />
-          <page></page>
-        </div>
-      </body>
-
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

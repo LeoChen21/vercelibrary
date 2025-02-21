@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./../components/Header";
+import Header from "../components/Header";
 
 export const metadata: Metadata = {
   title: "OWL",
@@ -14,13 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div>
-          <Header />
-          <page></page>
-        </div>
-      </body>
-
+      <div>
+        <Header />
+      </div>
     </html>
   );
 }

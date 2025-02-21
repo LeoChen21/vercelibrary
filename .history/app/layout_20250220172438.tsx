@@ -17,7 +17,6 @@ export default function RootLayout({
       <body>
         <div>
           <Header />
-          <page></page>
         </div>
       </body>
 

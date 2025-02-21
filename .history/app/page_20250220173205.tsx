@@ -1,9 +1,8 @@
 export default function Home() {
   return (
     <section>
-      <div className="mx-auto max-w-screen-md border rounded-xl">
-
-      </div>
+      <h1>Home</h1>
+      <p>Welcome to the Home page</p>
     </section>
   );
 }
