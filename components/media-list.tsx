@@ -21,7 +21,11 @@ const MediaList = async ({query, currentPage}) => {
     {medias.map((media, index) => (
           <tr key={media.id} className="bg-white border-b">
             <td className="py-3 px-6">{media.title}</td>
-            <td className="py-3 px-6">{media.url}</td>
+            <td className="py-3 px-6">
+              <a href={media.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+                {media.url}
+              </a>
+            </td>
             <td className="py-3 px-6">{media.type}</td>
             <td className="flex items-center justify-center gap-1 py-3">  
              
