@@ -1,26 +1,17 @@
-import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "./../components/Header";
 
-export const metadata: Metadata = {
-  title: "OWL",
-  description: "Organized Web Library",
+const poppins = Poppins({ subsets: ["latin"], weight: ['400'] });
+
+export const metadata = {
+  title: "Organized Web Library",
+  description: "Create a personal web library for all genres of media.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <div>
-          <Header />
-          <page></page>
-        </div>
-      </body>
-
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
