@@ -13,6 +13,7 @@ const MediaList = async ({query, currentPage}) => {
       <tr>
         <th className="py-3 px-6">Title</th>
         <th className="py-3 px-6">URL</th>
+        <th className="py-3 px-6">Type</th>
         <th className="py-3 px-6 text-center">Actions</th>
       </tr>
     </thead>
@@ -21,6 +22,7 @@ const MediaList = async ({query, currentPage}) => {
           <tr key={media.id} className="bg-white border-b">
             <td className="py-3 px-6">{media.title}</td>
             <td className="py-3 px-6">{media.url}</td>
+            <td className="py-3 px-6">{media.type}</td>
             <td className="flex items-center justify-center gap-1 py-3">  
              
               <Link className='cursor-pointer' href={`/${media.id}`}>Update</Link>
